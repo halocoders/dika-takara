@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  padding: 16px 20px;
+  margin: auto;
+}
+body,
+h1,
+h2,
+h3,
+p,
+li,
+span,
+a {
+  font-family: 'Inter', sans-serif;
+}
