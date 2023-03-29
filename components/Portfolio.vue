@@ -61,6 +61,10 @@ export default {}
 </script>
 
 <style scoped>
+.container {
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
 section {
   background: #f3f3f3;
 }

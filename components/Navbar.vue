@@ -8,7 +8,6 @@
         <img
           src="/img/logo.png"
           alt="logo"
-          :style="filled && 'filter: invert(100%);'"
         />
       </div>
       <div class="right-container">
@@ -18,7 +17,6 @@
             src="/img/close.png"
             alt="menu"
             class="w-9/12"
-            :style="filled && 'filter: invert(100%);'"
             @click="closeModal()"
           />
           <img
@@ -26,7 +24,6 @@
             src="/img/menu.png"
             alt="menu"
             class="w-9/12"
-            :style="filled && 'filter: invert(100%);'"
             @click="openModal()"
           />
         </button>
@@ -115,7 +112,7 @@ nav {
   justify-content: space-between;
 }
 nav.filled {
-  background: white;
+  background: #018D73;
   box-shadow: rgb(116 116 116 / 31%) 0px 0px 10px;
 }
 nav.filled.filled-modal {
@@ -148,9 +145,6 @@ nav.filled.filled-modal img {
     padding: 12px 20px;
     text-transform: uppercase;
     cursor: pointer;
-  }
-  nav.filled .container-desktop li p {
-    color: black;
   }
 }
 @media (min-width: 840px) and (max-width: 1370px) {

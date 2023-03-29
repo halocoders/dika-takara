@@ -10,9 +10,11 @@
         communities.
       </p>
       <div class="container-values mt-6">
-        <h2>Our Values</h2>
+        <h2>Our Values <span class="hidden"></span></h2>
         <div class="container-wrap flex flex-col">
-          <div class="img-wrap" style="background: url('/img/man.jpg')"></div>
+          <div class="img-wrap" style="background: url('/img/man.jpg')">
+            <div class="img-inner absolute top-0 right-0 left-0 bottom-0 bg-black opacity-40"></div>
+          </div>
           <div class="value-text">
             <h3>Equity Investments</h3>
             <p class="values">
@@ -37,6 +39,7 @@ export default {}
 
 <style scoped>
 .container {
+  padding-top: 40px;
   padding-bottom: 40px !important;
 }
 h2 {
@@ -45,6 +48,9 @@ h2 {
   margin: 22px 0;
   text-transform: uppercase;
   text-align: center;
+  padding: 10px 0;
+  background: #018D73;
+  color: white;
 }
 h3 {
   font-size: 20px;
@@ -61,7 +67,8 @@ h3 {
   background-position: center !important;
   background-repeat: no-repeat !important;
   height: 222px;
-  filter: grayscale(100%);
+  position: relative;
+  /* filter: grayscale(100%); */
 }
 
 @media (min-width: 840px) {
@@ -70,9 +77,24 @@ h3 {
   }
   h2 {
     font-size: 32px;
+    padding: 0;
+    background: transparent;
+    color: black;
+    width: max-content;
+    margin: 22px auto;
+    position: relative;
+  }
+  h2::after {
+    content: '';
+    position: absolute;
+    right: -20px;
+    bottom: -5px;
+    height: 8px;
+    width: 120px;
+    background: #018D73;
   }
   .container-values h2 {
-    margin: 40px 0;
+    margin: 40px auto;
   }
   h3 {
     font-size: 24px;

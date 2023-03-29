@@ -40,7 +40,7 @@ export default {
 <style scoped>
 .navbar-modal {
   z-index: 100;
-  background: rgba(0, 0, 0, 0.95);
+  background: #018D73;
 }
 ul {
   height: 100%;
